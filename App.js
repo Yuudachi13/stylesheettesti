@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { Text, View } from 'react-native';
-import { StyleSheet } from 'react-native';
+import StyleSheet from './Styles';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Testi tekstiä vähän tänne näin</Text>
+    <View style={[StyleSheet.container,{alingItems: 'flex-start'}]}>
+      <Text>Testi tekstiä vähän tänne </Text>
       <StatusBar style="auto" />
     </View>
   );
